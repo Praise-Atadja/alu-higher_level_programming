@@ -1,5 +1,4 @@
---  lists all the tables of a database in your MySQL server.
--- The database name will be passed as argument of mysql command (in the following example: mysql is the name of the database)
+-- deletes the database hbtn_0c_0 in your MySQL server.
+-- If the database hbtn_0c_0 doesn’t exist, your script should not fail
 
-SHOW TABLES FROM mysql;
-
+DROP DATABASE IF EXISTS hbtn_0c_0;
