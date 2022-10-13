@@ -1,1 +1,5 @@
-# alu-higher_level_programming
+Python
+
+SQL
+
+JavaScript
