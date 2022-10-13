@@ -1,10 +1,14 @@
 #!/usr/bin/node
-exports.nbOccurences = function (list, searchElement) {
-	  let count = 0;
-	  for (let i in list) {
-		      if (list[i] === searchElement) {
-			            count++;
-			          }
+const Square1 = require('./5-square.js');
+
+module.exports = class Square extends Square1 {
+	  charPrint (c) {
+		      if (c === undefined) {
+			            this.print();
+			          } else {
+					        for (let i = 0; i < this.width; i++) {
+							        console.log(c.repeat(this.height));
+							      }
+					      }
 		    }
-	  return count;
 };
