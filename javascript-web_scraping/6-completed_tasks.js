@@ -5,10 +5,10 @@ request(url, function (err, response, body) {
   if (err) {
     console.log(err);
   } else if (response.statusCode === 200) {
-    let completed = {};
-    let tasks = JSON.parse(body);
-    for (let i in tasks) {
-      let task = tasks[i];
+    const completed = {};
+    const tasks = JSON.parse(body);
+    for (const i in tasks) {
+      const task = tasks[i];
       if (task.completed === true) {
         if (completed[task.userId] === undefined) {
           completed[task.userId] = 1;
@@ -22,4 +22,3 @@ request(url, function (err, response, body) {
     console.log('An error occured. Status code: ' + response.statusCode);
   }
 });
-
